@@ -23,7 +23,7 @@ function deleteToDo(e) {
 	toDos = cleanToDos;
 
 	//새로운 배열을 저장함
-	saveToDos();
+	saveToDos()
 }
 
 function saveToDos() {
@@ -32,13 +32,13 @@ function saveToDos() {
 //localStorage에는 js data를 저장 할 수 없다. 오직type이 string만가능
 
 const paintToDo = (text) => {
-	const li = document.createElement("li");
+const li = document.createElement("li");
 	const delBtn = document.createElement("button");
 	delBtn.innerText = "❌";
 	delBtn.addEventListener("click", deleteToDo);
 	const span = document.createElement("span");
 	const newId = toDos.length + 1;
-	span.innerText = text;
+	span.innerText = text
 
 	li.appendChild(delBtn);
 	li.appendChild(span);

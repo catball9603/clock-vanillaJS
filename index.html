@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Hello Clock</title>
-</head>
-<body>
-  <!-- Clock -->
-  <div class="js-clock">
-    <h1>00:00</h1>
-  </div>
-  <!-- /Clock -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Hello Clock</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="js_weather"></div>
+			<!-- Clock -->
+			<div class="js-clock">
+				<h1>00:00</h1>
+			</div>
+			<!-- /Clock -->
 
-  <!-- Greetings -->
-  <form class="js_form form">
-    <input type="text" placeholder="What's your name?" />
-  </form>
-  <h4 class="js_greetings greetings"></h4> 
-  <!-- /Greetings -->
+			<!-- Greetings -->
+			<form class="js_form form">
+				<input type="text" placeholder="What's your name?" />
+			</form>
+			<h4 class="js_greetings greetings"></h4>
+			<!-- /Greetings -->
 
-  <!-- Todo List -->
-  <div class="todo_container">
-    <form class="todo_form">
-      <input type="text" placeholder="Whrite a to do." />
-    </form>
-    <ul class="todo_List"></ul>
-  </div>
-  <!-- /Todo List -->
+			<!-- Todo List -->
+			<div class="todo_container">
+				<form class="todo_form">
+					<input type="text" placeholder="Whrite a to do." />
+				</form>
+				<ul class="todo_List"></ul>
+			</div>
+			<!-- /Todo List -->
+			
+		</div>
+		
+		
 
-  
-  <script src="js/clock.js"></script>
-  <script src="js/greeting.js"></script>
-  <script src="js/todo.js"></script>
-  <script src="js/background.js"></script>
-</body>
+		<script src="js/clock.js"></script>
+		<script src="js/greeting.js"></script>
+		<script src="js/todo.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/weather.js"></scriptsrc>
+	</body>
 </html>
