@@ -1,7 +1,18 @@
 {
-  "name": "momentum2",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Hokmah-ym <hokmahgrace@gamil.com>",
-  "license": "MIT"
+	"name": "momentum2",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Hokmah-ym <hokmahgrace@gamil.com>",
+	"license": "MIT",
+	"dependencies": {
+		"gh-pages": "^3.1.0"
+	},
+	"scripts": {
+    "start":"parcel index.html",
+		"deloy": "gh-pages - d build",
+		"predeloy": "yarn run build"
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	}
 }
