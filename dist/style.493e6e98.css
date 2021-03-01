@@ -1,107 +1,112 @@
 @charset "utf-8";
 
 .body {
-	width: 100%;
-	height: 100%;
-	background: #ecf0f1;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-	width: 1130px;
-	height: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/* justify-content: center; */
-	margin-top: 170px;
+  width: 1130px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 170px;
 }
+
 .js_weather {
-	font-size: 16px;
-	color: #fff;
-	align-items: unset;
+  font-size: 16px;
+  color: #fff;
+  align-items: unset;
 }
 
 h1 {
-	font-size: 200px;
-	color: rgb(230, 230, 230);
-	transition: color 0.5s ease-in-out;
+  font-size: 200px;
+  color: rgb(230, 230, 230);
+  transition: color 0.5s ease-in-out;
 }
 
 .clicked {
-	color: #7f8c8d;
+  color: #7f8c8d;
 }
 
 .form,
 .greetings {
-	display: none;
+  display: none;
 }
 
 .showing {
-	display: block;
+  display: block;
 }
 
 h4 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 500;
-	font-size: 80px;
-	color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  color: #fff;
 }
 
 .todo_container {
-	font-family: "Raleway", sans-serif;
-	width: 50%;
-	margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+  margin-top: 30px;
 }
 
 .todo_form input {
-	width: 100%;
-	height: 50px;
-	font-size: 20px;
-	opacity: 0.7;
-	padding: 0 20px;
-	border-radius: 2px;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  opacity: 0.7;
+  padding: 0 20px;
+  border-radius: 2px;
 }
+
 .todo_container ul {
-	margin-top: 20px;
-	color: #fff;
-	background-color: rgb(0, 0, 0, 0.6);
-	border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
+
 .todo_container li {
-	padding: 5px 10px;
+  padding: 5px 10px;
 }
+
 .todo_container li:hover button {
-	visibility: visible;
+  visibility: visible;
 }
+
 .todo_container li button {
-	margin-right: 10px;
-	visibility: hidden;
+  margin-right: 10px;
+  visibility: hidden;
 }
+
 .todo_container li button,
 .todo_container li span {
-	font-size: 25px;
-	text-align: center;
+  font-size: 25px;
+  text-align: center;
 }
 
 .bgImage {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	animation: fadeIn 0.5s linear;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=/style.493e6e98.css.map */
