@@ -123,15 +123,18 @@ window.addEventListener('load', loadImg);
 var UNSPLASH_API = 'SEhkXwPPqBzUi5jwfi7T_zyQX0xkavE80DvZ7pAsVEg';
 
 function loadImg() {
-  var url = "https://api.unsplash.com/photos/random?query=ocean&client_id=".concat(UNSPLASH_API);
-  var imageDiv = document.querySelector('.bgImage');
+  var url = "https://api.unsplash.com/photos/random?query=lake&orientation=landscape&client_id=".concat(UNSPLASH_API);
+  var imageDiv = document.querySelector('body');
   fetch(url).then(function (response) {
     return response.json();
   }).then(function (data) {
+    console.log(data);
     var image = new Image();
-    image.src = data.urls.full;
+    image.style = "background-image: url(".concat(data.urls.full, ")");
     image.classList.add('bgImage');
     imageDiv.appendChild(image);
+  }).catch(function (error) {
+    return console.error('Error:', error);
   });
 }
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -162,7 +165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50154" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56636" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

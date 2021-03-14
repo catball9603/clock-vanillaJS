@@ -118,17 +118,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/weather.js":[function(require,module,exports) {
-var weather = document.querySelector(".js_weather");
-var COORDS = "coords";
-var API_KEY = "f44797779b7462a164c3e49d062bb7cd"; //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+var weather = document.querySelector('.js_weather');
+var COORDS = 'coords';
+var API_KEY = 'f44797779b7462a164c3e49d062bb7cd'; //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
 function getWeather(lat, lon) {
   fetch("https://api.openweathermap.org/data/2.5/weather?lat=".concat(lat, "&lon=").concat(lon, "&appid=").concat(API_KEY, "&units=metric")).then(function (response) {
     return response.json();
   }).then(function (json) {
-    var tem = json.main.temp;
+    var tem = Math.floor(json.main.temp);
     var place = json.name;
-    weather.innerText = "".concat(tem, "\u2103 @ ").concat(place);
+    weather.innerText = "".concat(tem, " \u2103 @ ").concat(place);
   });
 }
 
@@ -199,7 +199,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50154" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56636" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

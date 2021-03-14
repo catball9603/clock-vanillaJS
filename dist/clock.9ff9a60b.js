@@ -118,16 +118,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/clock.js":[function(require,module,exports) {
-var clockContainer = document.querySelector(".js-clock");
-var clockTitle = clockContainer.querySelector("h1");
+var clockContainer = document.querySelector('.js-clock');
+var clockTitle = clockContainer.querySelector('h1');
 
 function getTime() {
   var date = new Date();
   var mimutes = date.getMinutes();
   var hours = date.getHours();
   var seconds = date.getSeconds();
-  clockTitle.innerText = "".concat(hours < 10 ? "0".concat(hours) : hours, ":").concat(mimutes < 10 ? "0".concat(mimutes) : mimutes, ":").concat(seconds < 10 ? "0".concat(seconds) : seconds);
-} //정의 된 함수를 실행
+  clockTitle.innerText = "".concat(hours < 10 ? "0".concat(hours) : hours, ":").concat(mimutes < 10 ? "0".concat(mimutes) : mimutes);
+} //: ${seconds < 10 ? `0${seconds}` : seconds}
+//정의 된 함수를 실행
 
 
 function init() {
@@ -165,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50154" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56636" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
