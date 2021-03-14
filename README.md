@@ -42,3 +42,5 @@
 ### 6. deploy
 
 - [x] gh-page deploy
+
+gh-page : https://catball9603.github.io/clock-vanillaJS/
