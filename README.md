@@ -2,6 +2,11 @@
 
 ### Vanilla JS
 
+- vanillaJS
+- css
+- unsplash API
+- openweathermap Weather API
+
 ### 1. clock.js
 
 - [x] date생성
@@ -36,7 +41,7 @@
 - [x] handleGeoSucces(position)
 - [x] handleGeoError()
 - [x] saveCoords(myCoords)
-- [x] getWeather(lat, lon)
+- [x] getWeather(lat, lon): Weather API
 - [x] loadCoord()
 
 ### 6. deploy
