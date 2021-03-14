@@ -39,6 +39,6 @@
 - [x] getWeather(lat, lon)
 - [x] loadCoord()
 
-### 6. netlify build
+### 6. deploy
 
-- [x] 설치
+- [x] gh-page deploy
